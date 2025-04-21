@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Климатические условия</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/icons8-температура-32.png">
+</head>
+<body>
+    <div id="cities"> 
+        <label for="city-search">Выберите город:</label>
+        <input type="text" id="city-search" placeholder="Введите город...">
+        <div id="city-results" class="search-results"></div>
+        <label for="city-choose">Выберите город:</label>
+        <select name="city-choose" id="city-choose">
+            <optgroup label="Западная Россия">
+                <option value="Kaliningrad">Калининград</option>
+                <option value="Spb">Санкт-Петербург</option>
+                <option value="Pskov">Псков</option>
+            </optgroup>
+            <optgroup label="Центральная Россия">
+                <option value="Moscow">Москва</option>
+                <option value="Nig-Nov">Нижний-Новгород</option>
+                <option value="Voron">Воронеж</option>
+            </optgroup>
+            <optgroup label="Юг России">
+                <option value="Rostov">Ростов</option>
+                <option value="Krasnodar">Краснодар</option>
+                <option value="Sochi">Сочи</option>
+            </optgroup>
+            <optgroup label="Поволжье">
+                <option value="Kazan">Казань</option>
+                <option value="Samara">Самара</option>
+                <option value="Volga">Волгоград</option>
+            </optgroup>
+            <optgroup label="Урал">
+                <option value="EKB">Екатеренбург</option>
+                <option value="Chelyab">Челябинск</option>
+                <option value="Perm">Пермь</option>
+            </optgroup>
+            <optgroup label="Западная Сибирь">
+                <option value="Novosib">Новосибирск</option>
+                <option value="Omsk">Омск</option>
+                <option value="Tomsk">Томск</option>
+            </optgroup>
+        </select>
+    </div>
+    <div id="main">
+        <button id="copy-btn">Копировать</button>
+        <div id="weather-info">
+            <h2>Информация о климате:</h2>
+            <p>Выберите город из списка</p>
+        </div>
+    </div>
+    <script src="js2.js"></script>   
+</body>
+</html>
